@@ -9,5 +9,6 @@
 #include "SimpleTimer.hpp"
 #include "Semaphore.hpp"
 #include "Time.hpp"
+#include "BitFlag.hpp"
 
 #endif // !FOUNDATION_HPP

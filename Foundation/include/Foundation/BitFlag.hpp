@@ -1,7 +1,8 @@
 #ifndef BITFLAG_HPP
 #define BITFLAG_HPP
+#include "defs.hpp"
 
-namespace fd
+namespace ks
 {
 	template<typename T, typename U>
 	struct BitFlag
@@ -37,6 +38,11 @@ namespace fd
 		bool operator ==(const U& r) const
 		{
 			return r.value == value;
+		}
+
+		U operator |(const U& r) const
+		{
+			return U(value | r.value);
 		}
 	};
 }

@@ -2,7 +2,7 @@
 #include <sstream>
 #include <fstream>
 
-namespace fd
+namespace ks
 {
 	std::string readFile(const std::string & FilePath)
 	{

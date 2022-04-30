@@ -2,10 +2,11 @@
 #define APPLICATION_HPP
 
 #include <vector>
+#include "defs.hpp"
 
-namespace fd
+namespace ks
 {
-	class Application
+	class Foundation_API Application
 	{
 	private:
 		static std::vector<std::string> arguments;

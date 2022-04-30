@@ -4,10 +4,11 @@
 #include <thread>
 #include <mutex>
 #include <condition_variable>
+#include "defs.hpp"
 
-namespace fd
+namespace ks
 {
-	class Semaphore
+	class Foundation_API Semaphore
 	{
 	public:
 		explicit Semaphore(int count);

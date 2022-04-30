@@ -8,6 +8,7 @@
 
 #ifndef BOOST_NONCOPYABLE_HPP_INCLUDED
 #define BOOST_NONCOPYABLE_HPP_INCLUDED
+#include "defs.hpp"
 
 namespace boost {
 
@@ -18,7 +19,7 @@ namespace boost {
 
 	namespace noncopyable_  // protection from unintended ADL
 	{
-		class noncopyable
+		class Foundation_API noncopyable
 		{
 		protected:
 			noncopyable() {}

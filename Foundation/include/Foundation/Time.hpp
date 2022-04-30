@@ -1,16 +1,13 @@
 #ifndef TIME_HPP
 #define TIME_HPP
 
-#include <chrono>
+#include "defs.hpp"
 
-namespace fd
+namespace ks
 {
-	static long long getCurrentMillisecondsTime() noexcept
-	{
-		std::chrono::steady_clock::time_point now = std::chrono::high_resolution_clock::now();
-		long long currentMilliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(now.time_since_epoch()).count();
-		return currentMilliseconds;
-	}
+	long long Foundation_API getCurrentMillisecondsTime() noexcept;
+
+	double Foundation_API getCurrentTime() noexcept;
 }
 
 #endif // !TIME_HPP

@@ -2,8 +2,9 @@
 #define DEFER_HPP
 #include <functional>
 #include "noncopyable.hpp"
+#include "defs.hpp"
 
-class _Defer: public boost::noncopyable
+class Foundation_API _Defer: public boost::noncopyable
 {
 public:
 	~_Defer()

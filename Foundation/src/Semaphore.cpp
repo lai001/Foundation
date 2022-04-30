@@ -1,6 +1,6 @@
 #include "Semaphore.hpp"
 
-namespace fd
+namespace ks
 {
 	Semaphore::Semaphore(int count)
 		:count(count)

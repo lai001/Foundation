@@ -6,10 +6,11 @@
 #include <chrono>
 #include <functional>
 #include "noncopyable.hpp"
+#include "defs.hpp"
 
-namespace fd
+namespace ks
 {
-	class SimpleTimer :public boost::noncopyable
+	class Foundation_API SimpleTimer :public boost::noncopyable
 	{
 	public:
 		SimpleTimer(const long long timeInterval, std::function<void(SimpleTimer&)> closure);

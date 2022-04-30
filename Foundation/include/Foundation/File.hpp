@@ -1,10 +1,11 @@
 #ifndef FILE_HPP
 #define FILE_HPP
 #include <string>
+#include "defs.hpp"
 
-namespace fd
+namespace ks
 {
-	static std::string readFile(const std::string& FilePath);
+	std::string Foundation_API readFile(const std::string& FilePath);
 }
 
 #endif // !FILE_HPP

@@ -1,7 +1,7 @@
 #include "SimpleTimer.hpp"
 #include <assert.h>
 
-namespace fd
+namespace ks
 {
 	SimpleTimer::SimpleTimer(const long long timeInterval, std::function<void(SimpleTimer&)> closure)
 		: closure(closure), timeInterval(timeInterval)

@@ -1,9 +1,9 @@
 #include "Application.hpp"
 #include "defer.hpp"
 
-namespace fd
+namespace ks
 {
-	std::vector<std::string> fd::Application::arguments;
+	std::vector<std::string> Application::arguments;
 
 	std::string getFolder(const std::string& Filename) noexcept
 	{
@@ -16,7 +16,7 @@ namespace fd
 		return Directory;
 	}
 
-	void fd::Application::Init(int args, char** argv) noexcept
+	void Application::Init(int args, char** argv) noexcept
 	{
 		arguments.clear();
 		for (int i = 0; i < args; ++i)
@@ -25,24 +25,24 @@ namespace fd
 		}
 	}
 
-	std::vector<std::string> fd::Application::getArguments() noexcept
+	std::vector<std::string> Application::getArguments() noexcept
 	{
 		return arguments;
 	}
 
-	const std::string fd::Application::getAppDir() noexcept
+	const std::string Application::getAppDir() noexcept
 	{
 		return getFolder(getAppPath());
 	}
 
-	const std::string fd::Application::getAppPath() noexcept
+	const std::string Application::getAppPath() noexcept
 	{
 		return arguments[0];
 	}
 
 	std::string Application::getResourceDir() noexcept
 	{
-		std::string AppDir = fd::Application::getAppDir();
+		std::string AppDir = Application::getAppDir();
 		std::string path = AppDir + "/" + "Resource";
 		return path;
 	}

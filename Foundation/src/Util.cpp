@@ -15,3 +15,38 @@ namespace ks
 		};
 	}
 }
+
+
+
+namespace ks
+{
+	namespace os
+	{
+		std::string runCommand(const std::string & cmd, bool * status) noexcept
+		{
+			FILE *ptr = nullptr;
+			constexpr int bufferSize = 128;
+			std::array<char, bufferSize> buffer;
+			std::string result;
+			if ((ptr = _popen(cmd.c_str(), "r")) != nullptr)
+			{
+				while (fgets(buffer.data(), bufferSize, ptr) != nullptr) {
+					result += buffer.data();
+				}
+				_pclose(ptr);
+				if (status)
+				{
+					*status = true;
+				}
+			}
+			else
+			{
+				if (status)
+				{
+					*status = false;
+				}
+			}
+			return result;
+		}
+	}
+}

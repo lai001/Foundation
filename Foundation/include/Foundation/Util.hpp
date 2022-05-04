@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <functional>
+#include <array>
 #include "defs.hpp"
 #include "Time.hpp"
 
@@ -17,8 +18,15 @@ namespace ks
 		return tmp;
 	}
 
-	std::function<double()> measue(bool fps = false) noexcept;
+	std::function<double()> Foundation_API measue(bool fps = false) noexcept;
 }
 
+namespace ks
+{
+	namespace os
+	{
+		std::string Foundation_API runCommand(const std::string& cmd, bool* status) noexcept;
+	}
+}
 
 #endif // !FOUNDATIONUTIL_HPP

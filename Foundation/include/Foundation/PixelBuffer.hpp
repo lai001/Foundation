@@ -20,13 +20,11 @@ namespace ks
 			gray8,
 			yuv420p
 		};
-
-	private:
 		constexpr static unsigned int maxPlanes = 8;
 
+	private:
 		int _width;
 		int _height;
-		//unsigned int count;
 		unsigned char* _data[maxPlanes];
 		PixelBuffer::FormatType _type;
 

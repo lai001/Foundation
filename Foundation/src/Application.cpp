@@ -1,4 +1,5 @@
 #include "Application.hpp"
+#include <assert.h>
 #include "defer.hpp"
 
 namespace ks
@@ -37,6 +38,7 @@ namespace ks
 
 	const std::string Application::getAppPath() noexcept
 	{
+		assert(arguments.empty() == false);
 		return arguments[0];
 	}
 

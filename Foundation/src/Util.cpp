@@ -14,9 +14,12 @@ namespace ks
 			return duration;
 		};
 	}
+
+	size_t Foundation_API alignment(const size_t n, const size_t align) noexcept
+	{
+		return (((n)+(align)-1)&~((align)-1));
+	}
 }
-
-
 
 namespace ks
 {

@@ -34,4 +34,9 @@ namespace boost {
 
 } // namespace boost
 
+namespace ks
+{
+	typedef boost::noncopyable noncopyable;
+}
+
 #endif  // BOOST_NONCOPYABLE_HPP_INCLUDED

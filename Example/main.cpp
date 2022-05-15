@@ -33,6 +33,8 @@ int main(int args, char** argv)
 	long long time = ks::getCurrentMillisecondsTime();
 	spdlog::info(time);
 
+	spdlog::info(ks::alignment(1000, 64));
+
 	std::cin >> std::string();
 
     return 0;

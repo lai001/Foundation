@@ -19,6 +19,8 @@ namespace ks
 	}
 
 	std::function<double()> Foundation_API measue(bool fps = false) noexcept;
+
+	size_t Foundation_API alignment(const size_t n, const size_t align) noexcept;
 }
 
 namespace ks

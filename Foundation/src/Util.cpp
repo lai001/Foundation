@@ -1,4 +1,6 @@
 #include "Util.hpp"
+#include <algorithm>
+#include <cctype>
 
 namespace ks
 {
@@ -50,6 +52,45 @@ namespace ks
 				}
 			}
 			return result;
+		}
+	}
+}
+
+namespace ks
+{
+	namespace stringop
+	{
+		bool Foundation_API isContains(const std::string& str, const std::string& substring)
+		{
+			return str.find(substring) != std::string::npos;
+		}
+
+		bool Foundation_API isStartWith(const std::string & str, const std::string & substring)
+		{
+			return str.rfind(substring, 0) == 0;
+		}
+
+		bool Foundation_API isEndWith(const std::string & str, const std::string & substring)
+		{
+			if (str.length() >= substring.length()) 
+			{
+				return (0 == str.compare(str.length() - substring.length(), substring.length(), substring));
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		std::string Foundation_API replaceAllOccurrences(std::string str, const std::string & from, const std::string & to)
+		{
+			size_t start_pos = 0;
+			while ((start_pos = str.find(from, start_pos)) != std::string::npos) 
+			{
+				str.replace(start_pos, from.length(), to);
+				start_pos += to.length();
+			}
+			return str;
 		}
 	}
 }

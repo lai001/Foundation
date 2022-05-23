@@ -4,6 +4,7 @@
 #include <vector>
 #include <functional>
 #include <array>
+#include <string>
 #include "defs.hpp"
 #include "Time.hpp"
 
@@ -28,6 +29,17 @@ namespace ks
 	namespace os
 	{
 		std::string Foundation_API runCommand(const std::string& cmd, bool* status) noexcept;
+	}
+}
+
+namespace ks
+{
+	namespace stringop
+	{
+		bool Foundation_API isContains(const std::string& str, const std::string& substring);
+		bool Foundation_API isStartWith(const std::string& str, const std::string& substring);
+		bool Foundation_API isEndWith(const std::string& str, const std::string& substring);
+		std::string Foundation_API replaceAllOccurrences(std::string str, const std::string& from, const std::string& to);
 	}
 }
 

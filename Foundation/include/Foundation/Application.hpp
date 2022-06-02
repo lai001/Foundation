@@ -1,5 +1,5 @@
-#ifndef APPLICATION_HPP
-#define APPLICATION_HPP
+#ifndef Foundation_Application_hpp
+#define Foundation_Application_hpp
 
 #include <vector>
 #include "defs.hpp"
@@ -26,4 +26,4 @@ namespace ks
 	};
 }
 
-#endif // !APPLICATION_HPP
+#endif // !Foundation_Application_hpp

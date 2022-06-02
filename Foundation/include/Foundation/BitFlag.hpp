@@ -1,5 +1,5 @@
-#ifndef BITFLAG_HPP
-#define BITFLAG_HPP
+#ifndef Foundation_BitFlag_hpp
+#define Foundation_BitFlag_hpp
 #include "defs.hpp"
 
 namespace ks
@@ -47,4 +47,4 @@ namespace ks
 	};
 }
 
-#endif // BITFLAG_HPP
+#endif // Foundation_BitFlag_hpp

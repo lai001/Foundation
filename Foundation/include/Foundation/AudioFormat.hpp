@@ -1,5 +1,5 @@
-#ifndef AUDIOFORMAT_H
-#define AUDIOFORMAT_H
+#ifndef Foundation_AudioFormat_hpp
+#define Foundation_AudioFormat_hpp
 #include <string>
 #include "defs.hpp"
 #include "BitFlag.hpp"
@@ -54,4 +54,4 @@ namespace ks
 	};
 }
 
-#endif // AUDIOFORMAT_H
+#endif // Foundation_AudioFormat_hpp

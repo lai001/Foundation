@@ -1,5 +1,5 @@
-#ifndef AUDIOPCMBUFFER_H
-#define AUDIOPCMBUFFER_H
+#ifndef Foundation_AudioPCMBuffer_hpp
+#define Foundation_AudioPCMBuffer_hpp
 
 #include <string>
 #include "noncopyable.hpp"
@@ -8,7 +8,7 @@
 
 namespace ks
 {
-	class Foundation_API AudioPCMBuffer : public boost::noncopyable
+	class Foundation_API AudioPCMBuffer : public noncopyable
 	{
 	private:
 		AudioFormat _audioFormat;
@@ -43,4 +43,4 @@ namespace ks
 
 }
 
-#endif // AUDIOPCMBUFFER_H
+#endif // Foundation_AudioPCMBuffer_hpp

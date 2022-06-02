@@ -1,5 +1,5 @@
-#ifndef TIME_HPP
-#define TIME_HPP
+#ifndef Foundation_Time_hpp
+#define Foundation_Time_hpp
 
 #include "defs.hpp"
 
@@ -10,4 +10,4 @@ namespace ks
 	double Foundation_API getCurrentTime() noexcept;
 }
 
-#endif // !TIME_HPP
+#endif // !Foundation_Time_hpp

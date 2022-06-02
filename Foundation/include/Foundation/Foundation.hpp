@@ -1,5 +1,5 @@
-#ifndef FOUNDATION_HPP
-#define FOUNDATION_HPP
+#ifndef Foundation_Foundation_hpp
+#define Foundation_Foundation_hpp
 
 #include "defs.hpp"
 
@@ -17,4 +17,4 @@
 #include "AudioPCMBuffer.hpp"
 #include "PixelBuffer.hpp"
 
-#endif // !FOUNDATION_HPP
+#endif // !Foundation_Foundation_hpp

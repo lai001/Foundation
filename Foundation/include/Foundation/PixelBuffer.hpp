@@ -1,5 +1,5 @@
-#ifndef PIXELBUFFER_HPP
-#define PIXELBUFFER_HPP
+#ifndef Foundation_PixelBuffer_hpp
+#define Foundation_PixelBuffer_hpp
 
 #include <memory>
 #include "defs.hpp"
@@ -7,7 +7,7 @@
 
 namespace ks
 {
-	class Foundation_API PixelBuffer : public boost::noncopyable
+	class Foundation_API PixelBuffer : public noncopyable
 	{
 
 	public:
@@ -45,4 +45,4 @@ namespace ks
 	};
 }
 
-#endif // !PIXELBUFFER_HPP
+#endif // !Foundation_PixelBuffer_hpp

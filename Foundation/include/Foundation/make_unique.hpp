@@ -1,5 +1,5 @@
-#ifndef MAKE_UNIQUE_HPP
-#define MAKE_UNIQUE_HPP
+#ifndef Foundation_make_unique_hpp
+#define Foundation_make_unique_hpp
 
 #if __cplusplus == 201103L
 
@@ -41,4 +41,4 @@ namespace std {
 
 #endif // __cplusplus
 
-#endif // MAKE_UNIQUE_HPP
+#endif // Foundation_make_unique_hpp

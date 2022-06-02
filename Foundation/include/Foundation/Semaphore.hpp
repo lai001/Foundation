@@ -1,5 +1,5 @@
-#ifndef SEMAPHORE_HPP
-#define SEMAPHORE_HPP
+#ifndef Foundation_Semaphore_hpp
+#define Foundation_Semaphore_hpp
 
 #include <thread>
 #include <mutex>
@@ -26,4 +26,4 @@ namespace ks
 	};
 }
 
-#endif // !SEMAPHORE_HPP
+#endif // !Foundation_Semaphore_hpp

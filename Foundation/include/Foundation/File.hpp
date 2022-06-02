@@ -1,5 +1,5 @@
-#ifndef FILE_HPP
-#define FILE_HPP
+#ifndef Foundation_File_hpp
+#define Foundation_File_hpp
 #include <string>
 #include <vector>
 #include "defs.hpp"
@@ -17,4 +17,4 @@ namespace ks
 	};
 }
 
-#endif // !FILE_HPP
+#endif // !Foundation_File_hpp

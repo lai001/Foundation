@@ -21,6 +21,11 @@ namespace ks
 	{
 		return (((n)+(align)-1)&~((align)-1));
 	}
+
+	bool isPowerOfTwo(unsigned long x) noexcept
+	{
+		return (x != 0) && ((x & (x - 1)) == 0);
+	}
 }
 
 namespace ks

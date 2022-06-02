@@ -1,5 +1,5 @@
-#ifndef FOUNDATIONUTIL_HPP
-#define FOUNDATIONUTIL_HPP
+#ifndef Foundation_Util_hpp
+#define Foundation_Util_hpp
 
 #include <vector>
 #include <functional>
@@ -22,6 +22,8 @@ namespace ks
 	std::function<double()> Foundation_API measue(bool fps = false) noexcept;
 
 	size_t Foundation_API alignment(const size_t n, const size_t align) noexcept;
+
+	bool Foundation_API isPowerOfTwo(unsigned long x) noexcept;
 }
 
 namespace ks
@@ -43,4 +45,4 @@ namespace ks
 	}
 }
 
-#endif // !FOUNDATIONUTIL_HPP
+#endif // !Foundation_Util_hpp

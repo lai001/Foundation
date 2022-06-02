@@ -1,5 +1,5 @@
-#ifndef SIMPLETIMER_HPP
-#define SIMPLETIMER_HPP
+#ifndef Foundation_SimpleTimer_hpp
+#define Foundation_SimpleTimer_hpp
 
 #include <thread>
 #include <mutex>
@@ -10,7 +10,7 @@
 
 namespace ks
 {
-	class Foundation_API SimpleTimer :public boost::noncopyable
+	class Foundation_API SimpleTimer :public noncopyable
 	{
 	public:
 		SimpleTimer(const long long timeInterval, std::function<void(SimpleTimer&)> closure);
@@ -52,4 +52,4 @@ namespace ks
 	};
 }
 
-#endif // !SIMPLETIMER_HPP
+#endif // !Foundation_SimpleTimer_hpp

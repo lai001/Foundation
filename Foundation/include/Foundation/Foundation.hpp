@@ -16,5 +16,6 @@
 #include "AudioFormat.hpp"
 #include "AudioPCMBuffer.hpp"
 #include "PixelBuffer.hpp"
+#include "PixelBufferPool.hpp"
 
 #endif // !Foundation_Foundation_hpp

@@ -77,4 +77,10 @@ namespace ks
 		}
 		return buffer;
 	}
+
+	bool ks::File::isReadable(const std::string & filePath)
+	{
+		const std::ifstream stream(filePath.c_str());
+		return stream.good();
+	}
 }

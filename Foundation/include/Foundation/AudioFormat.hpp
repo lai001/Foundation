@@ -25,7 +25,7 @@ namespace ks
 
 	struct Foundation_API AudioFormatFlag : public ks::BitFlag<int, AudioFormatFlag>
 	{
-		explicit AudioFormatFlag(int v) :ks::BitFlag<int,  AudioFormatFlag>(v) { }
+		explicit AudioFormatFlag(int v = 0) :ks::BitFlag<int,  AudioFormatFlag>(v) { }
 		static const AudioFormatFlag isFloat;
 		static const AudioFormatFlag isSignedInteger;
 		static const AudioFormatFlag isNonInterleaved;

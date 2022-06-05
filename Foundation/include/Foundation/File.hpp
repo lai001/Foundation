@@ -14,6 +14,8 @@ namespace ks
 		static std::vector<char> readBinData(const std::string& filePath, bool* status);
 
 		static bool write(const std::string& content, const std::string& filePath);
+
+		static bool isReadable(const std::string& filePath);
 	};
 }
 

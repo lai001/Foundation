@@ -1,21 +1,11 @@
 #include "Application.hpp"
 #include <assert.h>
+#include "File.hpp"
 #include "defer.hpp"
 
 namespace ks
 {
 	std::vector<std::string> Application::arguments;
-
-	std::string getFolder(const std::string& Filename) noexcept
-	{
-		std::string Directory;
-		const size_t LastSlashIndex = Filename.rfind('\\');
-		if (std::string::npos != LastSlashIndex)
-		{
-			Directory = Filename.substr(0, LastSlashIndex);
-		}
-		return Directory;
-	}
 
 	void Application::Init(int args, char** argv) noexcept
 	{
@@ -33,7 +23,7 @@ namespace ks
 
 	const std::string Application::getAppDir() noexcept
 	{
-		return getFolder(getAppPath());
+		return File::getParentDir(getAppPath());
 	}
 
 	const std::string Application::getAppPath() noexcept

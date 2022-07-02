@@ -1,6 +1,7 @@
 #include "File.hpp"
 #include <sstream>
 #include <fstream>
+#include <filesystem>
 #include <assert.h>
 #include "defer.hpp"
 
@@ -82,5 +83,22 @@ namespace ks
 	{
 		const std::ifstream stream(filePath.c_str());
 		return stream.good();
+	}
+
+	std::string ks::File::getParentDir(const std::string& path)
+	{
+		const std::filesystem::path p = std::filesystem::path(path);
+		const std::filesystem::path parent = p.parent_path();
+		return parent.string();
+	}
+
+	std::string ks::File::pathJoin(const std::vector<std::string>& pathComponents)
+	{
+		std::filesystem::path path = "";
+		for (const std::string& pathComponent : pathComponents)
+		{
+			path = path / pathComponent;
+		}
+		return path.string();
 	}
 }

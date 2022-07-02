@@ -16,6 +16,10 @@ namespace ks
 		static bool write(const std::string& content, const std::string& filePath);
 
 		static bool isReadable(const std::string& filePath);
+
+		static std::string getParentDir(const std::string& path);
+
+		static std::string pathJoin(const std::vector<std::string>& pathComponents);
 	};
 }
 

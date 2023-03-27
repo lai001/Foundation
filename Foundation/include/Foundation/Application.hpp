@@ -2,6 +2,7 @@
 #define Foundation_Application_hpp
 
 #include <vector>
+#include <string>
 #include "defs.hpp"
 
 namespace ks

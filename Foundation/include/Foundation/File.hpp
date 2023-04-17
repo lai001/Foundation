@@ -20,6 +20,8 @@ namespace ks
 		static std::string getParentDir(const std::string& path);
 
 		static std::string pathJoin(const std::vector<std::string>& pathComponents);
+
+		static bool createDirectory(const std::string& path);
 	};
 }
 

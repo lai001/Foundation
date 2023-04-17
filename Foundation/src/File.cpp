@@ -101,4 +101,10 @@ namespace ks
 		}
 		return path.string();
 	}
+
+	bool ks::File::createDirectory(const std::string& path)
+	{
+		const std::filesystem::path dir(path);
+		return std::filesystem::create_directory(dir);
+	}
 }
